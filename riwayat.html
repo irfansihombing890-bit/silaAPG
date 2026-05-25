@@ -1,71 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Riwayat Pengajuan — SILA</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- HEADER & NAVIGASI -->
     <header class="navbar">
-        <div class="container navbar-inner">
-            <a href="index.html" class="logo">🎓 SILA</a>
-            <input type="checkbox" id="navToggle" class="nav-toggle">
-            <label for="navToggle" class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Beranda</a></li>
-                    <li><a href="layanan.html">Ajukan Layanan</a></li>
-                    <li><a href="riwayat.html" class="active">Riwayat</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container navbar-inner">
+        <a href="index.html" class="logo">🎓 SILA</a>
+        <input type="checkbox" id="navToggle" class="nav-toggle" />
+        <label for="navToggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="layanan.html">Ajukan Layanan</a></li>
+            <li><a href="riwayat.html" class="active">Riwayat</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <section class="section">
-            <div class="container">
-                <h1>Riwayat Pengajuan</h1>
-                <p class="section-desc">Daftar semua pengajuan layanan akademik yang telah Anda buat.</p>
-                <p><em>Tabel riwayat akan tersedia pada tahap berikutnya.</em></p>
-            </div>
-        </section>
+      <section class="section">
+        <div class="container">
+          <h1>Riwayat Pengajuan</h1>
+          <p class="section-desc">
+            Daftar semua pengajuan layanan akademik yang telah Anda buat.
+          </p>
+          <p><em>Tabel riwayat akan tersedia pada tahap berikutnya.</em></p>
+
+          <!-- TABLES -->
+          <table class="data-table">
+            <caption>
+              Data Pengajuan Layanan Akademik
+            </caption>
+
+            <thead>
+              <!-- NO | NAMA | NIM | LAYANAN | TANGGAL | STATUS -->
+              <tr>
+                <th>NO</th>
+                <th>NAMA</th>
+                <th>NIM</th>
+                <th>LAYANAN</th>
+                <th>TANGGAL</th>
+                <th>STATUS</th>
+              </tr>
+            </thead>
+
+            <!-- BODY -->
+            <tbody>
+              <!-- TAMPILAN DATA -->
+
+              <!-- BARIS 1 -->
+              <tr>
+                <td>1</td>
+                <td>Opah</td>
+                <td>241120761</td>
+                <td>SKA</td>
+                <td>01 Mei 2026</td>
+                <td>DIPROSES</td>
+              </tr>
+
+              <!-- BARIS 2 -->
+              <tr>
+                <td>2</td>
+                <td>Pan</td>
+                <td>241120762</td>
+                <td>PDA</td>
+                <td>09 Mei 2026</td>
+                <td>SELESAI</td>
+              </tr>
+
+              <!-- BARIS 3 -->
+              <tr>
+                <td>3</td>
+                <td>Ros</td>
+                <td>241120763</td>
+                <td>TNM</td>
+                <td>12 Mei 2026</td>
+                <td>SELESAI</td>
+              </tr>
+
+              <!-- BARIS 4 -->
+              <tr>
+                <td>4</td>
+                <td>Upin</td>
+                <td>241120764</td>
+                <td>CAK</td>
+                <td>12 Mei 2026</td>
+                <td>DIPROSES</td>
+              </tr>
+
+              <!-- BARIS 5 -->
+              <tr>
+                <td>5</td>
+                <td>Ipin</td>
+                <td>241120765</td>
+                <td>SKA</td>
+                <td>20 Mei 2026</td>
+                <td>SELESAI</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- END TABLES -->
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="container footer-inner">
-            <div>
-                <strong>🎓 SILA</strong>
-                <p>Platform digital untuk pengajuan layanan akademik mahasiswa.</p>
-            </div>
-            <div class="footer-nav">
-                <h4>Navigasi</h4>
-                <ul>
-                    <li><a href="index.html">Beranda</a></li>
-                    <li><a href="layanan.html">Ajukan Layanan</a></li>
-                    <li><a href="riwayat.html">Riwayat</a></li>
-                </ul>
-            </div>
+      <div class="container footer-inner">
+        <div>
+          <strong>🎓 SILA</strong>
+          <p>Platform digital untuk pengajuan layanan akademik mahasiswa.</p>
         </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2026 SILA — Dibuat untuk tugas Pemrograman Web</p>
-            </div>
+        <div class="footer-nav">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="layanan.html">Ajukan Layanan</a></li>
+            <li><a href="riwayat.html">Riwayat</a></li>
+          </ul>
         </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2026 SILA — Dibuat untuk tugas Pemrograman Web</p>
+        </div>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
